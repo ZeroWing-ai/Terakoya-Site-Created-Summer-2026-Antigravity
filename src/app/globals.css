@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-zen-maru: var(--font-zen-maru), "Zen Maru Gothic", sans-serif;
+  
+  --color-leaf-50: #f2f8f4;
+  --color-leaf-100: #deede1;
+  --color-leaf-200: #bfdc86;
+  --color-leaf-300: #8ec39a;
+  --color-leaf-400: #5ea56e;
+  --color-leaf-500: #3f8a50;
+  --color-leaf-600: #2d703e;
+  --color-leaf-700: #245933;
+  --color-leaf-800: #1f472b;
+  --color-leaf-900: #1a3b25;
+  --color-leaf-950: #0d2114;
+
+  --color-terakoya-green: #2d703e;
+  --color-terakoya-green-light: #5ea56e;
+  --color-terakoya-green-soft: #f2f8f4;
+  --color-terakoya-orange: #e76f33;
+  --color-terakoya-orange-hover: #d25b20;
+  --color-terakoya-orange-soft: #fff4ec;
+  --color-terakoya-yellow: #f3ad29;
+  --color-terakoya-yellow-soft: #fef7e7;
+  
+  --color-terakoya-bg: #fafaf6;
+  --color-terakoya-text: #2d372e;
+  --color-terakoya-muted: #6b7a6d;
+  --color-terakoya-border: #e3ebe4;
+}
+
+:root {
+  --background: #fafaf6;
+  --foreground: #2d372e;
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-zen-maru), "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Meiryo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-break: strict;
+  word-break: auto-phrase;
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-break: strict;
+  word-break: auto-phrase;
+}
+
+p, li, dd, dt {
+  line-break: strict;
+  text-wrap: pretty;
+}
+
+/* カスタムスクロールバー（温かみのあるスタイル） */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f8f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #8ec39a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5ea56e;
+}
